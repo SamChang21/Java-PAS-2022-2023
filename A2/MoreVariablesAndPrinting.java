@@ -22,3 +22,4 @@ public class MoreVariablesAndPrinting
             + " I get " + (myAge + myHeight + myWeight) + "." );
     }
 }
+ 

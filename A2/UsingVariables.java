@@ -10,4 +10,4 @@ public class UsingVariables
         System.out.println( "e is close to " + second + " ." );
         System.out.println( "I am learning a bit about" + scienceType + " ." );
     }
-}
+} 
