@@ -7,4 +7,4 @@ public class StillUsingVariables
 
         System.out.println( "My name is " + Name + "and I'll graduate in" + year + "." );
     }
-} 
+}

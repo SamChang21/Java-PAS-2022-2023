@@ -21,5 +21,4 @@ public class MoreVariablesAndPrinting
         System.out.println( "If I add " + myAge + ", " + myHeight + ", and " + myWeight
             + " I get " + (myAge + myHeight + myWeight) + "." );
     }
-}
- 
+} 

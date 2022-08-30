@@ -19,5 +19,4 @@ public class VariablesAndNames
         System.out.println( "We have " + passengers + " to carpool today." );
         System.out.println( "We need to put about " + average_passengers_per_car + " in each car." );
     }
-}
- 
+} 

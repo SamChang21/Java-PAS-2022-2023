@@ -38,4 +38,4 @@ public class MySchedule
         System.out.println("|" + period8 + "|                    " + course8 + "|             " + teacher8 + "|" );
         System.out.println( "+------------------------------------------------------------+" );
     }
-}  
+}
