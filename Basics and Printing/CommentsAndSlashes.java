@@ -1,3 +1,5 @@
+//SAm Chang, 9/2/2022
+//Yes, I got the idea
 public class CommentsAndSlashes
 {
     public static void main( String[] args )
