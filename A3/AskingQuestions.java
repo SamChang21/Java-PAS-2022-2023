@@ -6,23 +6,18 @@ public class AskingQuestions
 		Scanner keyboard = new Scanner(System.in);
 
 		int age= 17;
-		int feets= 5;
-		int inches= 6;	
+		int height= "5'6";
 		double weight= 53;
-		
 
 		System.out.print( "How old are you? " );
 		age = keyboard.nextInt();
 
-		System.out.print( "How many feet tall are you? " );
-		height = keyboard.next();
-
-		System.out.print( "And how many inches " );
+		System.out.print( "How tall are you? " );
 		height = keyboard.next();
 
 		System.out.print( "How much do you weigh? " );
 		weight = keyboard.nextDouble();
 
-		System.out.println( "So you're " + age + " old, " + feets+ " ' " +inches+ " tall and " + weight + " heavy." );
+		System.out.println( "So you're " + age + " old, " + height + " tall and " + weight + " heavy." );
 	}
 }

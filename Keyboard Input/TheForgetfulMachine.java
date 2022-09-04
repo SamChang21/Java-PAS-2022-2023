@@ -1,18 +1,17 @@
 import java.util.Scanner;
-public class AskingQuestions
-{
-	public static void main( String[] args )
+public class TheForgetfulMachine {
+    public static void main( String[] args )
 	{
 		Scanner keyboard = new Scanner(System.in);
 
-		int age= 17;
-		int feets= 5;
-		int inches= 6;	
-		double weight= 53;
+		String firstword= "lorry!";
+		String secondword= "deoxyribonucleic?";
+		int firstnumber= 42;	
+		double secondnumber= 1;
 		
 
 		System.out.print( "How old are you? " );
-		age = keyboard.nextInt();
+		age = keyboard.nextSting();
 
 		System.out.print( "How many feet tall are you? " );
 		height = keyboard.next();
