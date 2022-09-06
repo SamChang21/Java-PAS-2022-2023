@@ -20,7 +20,5 @@ public class statistics {
         System.out.println("Variance = "+variance);
         System.out.println("Standard deviation = "+StandardDeviation);
         kb.close();
-
-        kb.close();
     }
 }
