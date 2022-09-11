@@ -4,24 +4,24 @@ public class TheForgetfulMachine {
 	{
 		Scanner keyboard = new Scanner(System.in);
 
-		String firstword= "lorry!";
-		String secondword= "deoxyribonucleic?";
-		int firstnumber= 42;	
-		double secondnumber= 1;
+		String firstword;
+		String secondword;
+		int firstnumber;	
+		double secondnumber;
 		
+		System.out.print( "Give me a word!" );
+		firstword = keyboard.nextLine();
 
-		System.out.print( "How old are you? " );
-		age = keyboard.nextSting();
+		System.out.print( "Give me a second word!" );
+		secondword = keyboard.nextLine();
 
-		System.out.print( "How many feet tall are you? " );
-		height = keyboard.next();
+		System.out.print( "Great, now your favorite number?" );
+		firstnumber = keyboard.nextInt();
 
-		System.out.print( "And how many inches " );
-		height = keyboard.next();
+		System.out.print( "And your second-favorite number..." );
+		secondnumber = keyboard.nextDouble();
 
-		System.out.print( "How much do you weigh? " );
-		weight = keyboard.nextDouble();
-
-		System.out.println( "So you're " + age + " old, " + feets+ " ' " +inches+ " tall and " + weight + " heavy." );
+		System.out.println( "Whew!  Wasn't that fun?" );
+		keyboard.close();
 	}
 }
