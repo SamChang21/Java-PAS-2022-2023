@@ -12,17 +12,17 @@ using namespace std;
 
 int main()
 {
-    cout<<"SSSSSSSS  CCCCCCCCCC";
-    cout<<"S         C         ";
-    cout<<"S         C         ";
-    cout<<"S         C         ";
-    cout<<"S         C         ";
-    cout<<"SSSSSSSS  C      ";
-    cout<<"       S  C         ";
-    cout<<"       S  C         ";
-    cout<<"       S  C         ";
-    cout<<"       S  C         ";
-    cout<<"SSSSSSSS  CCCCCCCCCC";
+    cout<<"SSSSSSSS  CCCCCCCCCC"<<"\n";
+    cout<<"S         C         "<<"\n";
+    cout<<"S         C         "<<"\n";
+    cout<<"S         C         "<<"\n";
+    cout<<"S         C         "<<"\n";
+    cout<<"SSSSSSSS  C         "<<"\n";
+    cout<<"       S  C         "<<"\n";
+    cout<<"       S  C         "<<"\n";
+    cout<<"       S  C         "<<"\n";
+    cout<<"       S  C         "<<"\n";
+    cout<<"SSSSSSSS  CCCCCCCCCC"<<"\n";
     
 
     return 0;

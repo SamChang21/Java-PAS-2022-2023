@@ -12,8 +12,8 @@ using namespace std;
 
 int main()
 {
-    cout<<"I could have code like this.";
-    cout<<"This will run.";
+    cout<<"I could have code like this."<<"\n";
+    cout<<"This will run."<<"\n";
 
     return 0;
 }

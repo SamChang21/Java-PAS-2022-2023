@@ -12,12 +12,12 @@ using namespace std;
 
 int main()
 {
-    cout<<"Hello World!"
-    cout<<"Hello Again I like typing this."
-    cout<<"This is fun."
-    cout<<"Yay! Printing."
-    cout<<"I'd much rather you 'not'."
-    cout<<"I 'said' do not touch this."
+    cout<<"Hello World!"<<"\n";
+    cout<<"Hello Again I like typing this."<<"\n";
+    cout<<"This is fun."<<"\n";
+    cout<<"Yay! Printing."<<"\n";
+    cout<<"I'd much rather you 'not'."<<"\n";
+    cout<<"I 'said' do not touch this."<<"\n";
     
     return 0;
 }
