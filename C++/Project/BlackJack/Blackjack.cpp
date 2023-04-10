@@ -8,29 +8,29 @@ using namespace std;
 
 int cardDeck[13] = {1,2,3,4,5,6,7,8,9,10,10,10,10};
     
-int dealCardsG(){
+int dealCards(){
     int y;
     y = rand()%13;
-    cout<<"You got"<<cardDeck[y]<<"\n";
-    return cardDeck[y];
-}
-int dealCardsD(){
-    int y;
-    y = rand()%13;
-    cout<<"Dealer got"<<cardDeck[y]<<"\n";
     return cardDeck[y];
 }
 int Hit(){
     int y;
     y = rand()%13;
-    cout<<"You got"<<cardDeck[y]<<"\n";
     return cardDeck[y];
 }
-int HitD(){
-    int y;
-    y = rand()%13;
-    cout<<"dealer got"<<cardDeck[y]<<"\n";
-    return cardDeck[y];
+void check(int total){
+    if(total>21){
+        cout<<"Bust! \n";
+        cout<<"You lose \n";
+    }
+}
+void WinorLose(int x,y){
+    if(x<y && x<21){
+            cout<<"You lose \n";
+        }
+        else if(x>y && x<21){
+            cout<<"You win \n";
+        }
 }
 int main(){
     srand(time(0));
@@ -43,10 +43,17 @@ int main(){
     while(play == "Y"){
         gamerTotal = 0; 
         dealerTotal = 0;
-        gamerTotal = gamerTotal + dealCardsG() + dealCardsG();
-        dealerTotal = dealerTotal + dealCardsD() + dealCardsD();
+        gamerTotal = gamerTotal + dealCards() + dealCards();
+        dealerTotal = dealerTotal + dealCards() + dealCards();
         cout<<"Your total: "<<gamerTotal<<"\n";
         cout<<"Dealer's total: "<<dealerTotal<<"\n";
+        while(dealerTotal<15){
+            dealerTotal = dealerTotal + Hit();
+            cout<<"Dealer's total: "<<dealerTotal<<"\n";
+            if(dealerTotal>21){
+                cout<<"You win \n";
+            }
+        }
         cout<<"Hit? Y/N?\n";
         cin>>hit;
         while(hit == "Y"){
@@ -56,25 +63,12 @@ int main(){
                 cout<<"Hit? Y/N?\n";
                 cin>>hit;
             }
+            check(gamerTotal);
             if(gamerTotal>21){
-                cout<<"Bust! \n";
-                cout<<"You lose \n";
                 break;
             }
         }
-        if(dealerTotal<15){
-            dealerTotal = dealerTotal + HitD();
-            cout<<"Dealer's total: "<<dealerTotal<<"\n";
-            if(dealerTotal>21){
-                cout<<"You win \n";
-            }
-        }
-        if(gamerTotal<dealerTotal && gamerTotal<21){
-            cout<<"You lose \n";
-        }
-        else if(gamerTotal>dealerTotal && gamerTotal<21){
-            cout<<"You win \n";
-        }
+        WinorLose(gamerTotal,dealerTotal)
         cout<<"Do you want to play again? Y/N?\n";
         cin>>play;
     }
